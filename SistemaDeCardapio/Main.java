@@ -14,21 +14,28 @@ public class Main {
         cardapio.adicionarProduto(produto2);
         cardapio.adicionarProduto(produto3);
 
-        System.out.println("Produtos do cardapio");
-        
+        System.out.println("\n==== CARDÁPIO ====");
         cardapio.listarProdutos();
 
-        System.out.println("\n Buscando produto:");
-
+        System.out.println("\n==== BUSCAR PRODUTO ====");
         cardapio.buscarProduto("Pizza");
 
-        System.out.println("\n Removendo produto.");
-
+        System.out.println("\n==== REMOVER PRODUTO ====");
         cardapio.removerProduto("Pizza");
 
-        System.out.println("\n Cardapio atualizado.");
+        System.out.println("\n==== CARDÁPIO ATUALIZADO ====");
 
         cardapio.listarProdutos();
+
+        Pedido pedido = new Pedido();
+
+        pedido.adicionarProduto(produto1, 3);
+        pedido.adicionarProduto(produto3, 2);
+
+        double total = pedido.calcularTotal();
+
+        System.out.println("\n==== PEDIDO ====");
+        System.out.println("Total: R$ " + total);
 
     }
 }
