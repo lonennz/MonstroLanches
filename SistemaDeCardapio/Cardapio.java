@@ -46,9 +46,8 @@ public class Cardapio {
                 System.out.println("Produto removido.");
                 return;
         }
-
-        System.out.println("Produto não encontrado.");
     }
+        System.out.println("Produto não encontrado.");
 }
 }
 

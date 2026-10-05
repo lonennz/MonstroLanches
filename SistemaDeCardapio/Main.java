@@ -32,9 +32,12 @@ public class Main {
         pedido.adicionarProduto(produto1, 3);
         pedido.adicionarProduto(produto3, 2);
 
+        pedido.alterarQuantidade("Hamburguer", 5);
+
         double total = pedido.calcularTotal();
 
         System.out.println("\n==== PEDIDO ====");
+        pedido.listarPedido();
         System.out.println("Total: R$ " + total);
 
     }
